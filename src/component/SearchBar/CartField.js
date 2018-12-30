@@ -15,7 +15,7 @@ function mapStateToProps(state) {
 const styles = theme => ({
   cartButton: {
     margin: theme.spacing.unit,
-    borderColor: '#ccc',
+    borderColor: '#ddd',
   },
   cartTitle: {
     marginRight: 1 * theme.spacing.unit,

@@ -1,11 +1,12 @@
+/* eslint-disable import/no-unresolved */
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { Grid } from '@material-ui/core';
-import NormalButton from '../NormalButton';
+import NormalButton from 'component/NormalButton';
 
 function mapStateToProps(state) {
   return {
-    category: state.category,
+    category: state.homepage.category,
   };
 }
 

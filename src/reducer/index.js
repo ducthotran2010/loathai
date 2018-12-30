@@ -1,14 +1,12 @@
 import { combineReducers } from 'redux';
 import session from './session';
 import cart from './cart';
-import category from './homepage/category';
-import featuredProducts from './homepage/featuredProducts';
-import carousel from './homepage/carousel';
+import homepage from './homepage';
+import product from './product.js';
 
 export default combineReducers({
   session,
   cart,
-  category,
-  featuredProducts,
-  carousel,
+  homepage,
+  product,
 });

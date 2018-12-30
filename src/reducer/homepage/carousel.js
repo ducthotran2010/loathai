@@ -35,6 +35,46 @@ const carousel = (state = [], action) => {
         title: 'Zenfone Max Pro M2 1000 Suất Đặt Trước 8',
         picture: 'https://cdn.tgdd.vn/qcao/19_12_2018_11_01_05_zenphone-max-800-300.png',
         href: 'http://loathai.com',
+      },
+      {
+        title: 'Zenfone Max Pro M2 1000 Suất Đặt Trước 9',
+        picture: 'https://cdn.tgdd.vn/qcao/19_12_2018_11_01_05_zenphone-max-800-300.png',
+        href: 'http://loathai.com',
+      },
+      {
+        title: 'Zenfone Max Pro M2 1000 Suất Đặt Trước 10',
+        picture: 'https://cdn.tgdd.vn/qcao/19_12_2018_11_01_05_zenphone-max-800-300.png',
+        href: 'http://loathai.com',
+      },
+      {
+        title: 'Zenfone Max Pro M2 1000 Suất Đặt Trước 11',
+        picture: 'https://cdn.tgdd.vn/qcao/19_12_2018_11_01_05_zenphone-max-800-300.png',
+        href: 'http://loathai.com',
+      },
+      {
+        title: 'Zenfone Max Pro M2 1000 Suất Đặt Trước 12',
+        picture: 'https://cdn.tgdd.vn/qcao/19_12_2018_11_01_05_zenphone-max-800-300.png',
+        href: 'http://loathai.com',
+      }, {
+        title: 'Zenfone Max Pro M2 1000 Suất Đặt Trước 13',
+        picture: 'https://cdn.tgdd.vn/qcao/19_12_2018_11_01_05_zenphone-max-800-300.png',
+        href: 'http://loathai.com',
+      }, {
+        title: 'Zenfone Max Pro M2 1000 Suất Đặt Trước 14',
+        picture: 'https://cdn.tgdd.vn/qcao/19_12_2018_11_01_05_zenphone-max-800-300.png',
+        href: 'http://loathai.com',
+      }, {
+        title: 'Zenfone Max Pro M2 1000 Suất Đặt Trước 15',
+        picture: 'https://cdn.tgdd.vn/qcao/19_12_2018_11_01_05_zenphone-max-800-300.png',
+        href: 'http://loathai.com',
+      }, {
+        title: 'Zenfone Max Pro M2 1000 Suất Đặt Trước 16',
+        picture: 'https://cdn.tgdd.vn/qcao/19_12_2018_11_01_05_zenphone-max-800-300.png',
+        href: 'http://loathai.com',
+      }, {
+        title: 'Zenfone Max Pro M2 1000 Suất Đặt Trước 17',
+        picture: 'https://cdn.tgdd.vn/qcao/19_12_2018_11_01_05_zenphone-max-800-300.png',
+        href: 'http://loathai.com',
       }];
   }
 };

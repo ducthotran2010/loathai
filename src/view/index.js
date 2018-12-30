@@ -4,7 +4,7 @@ import Grid from '@material-ui/core/Grid';
 import TopBar from '../component/TopBar';
 import SearchBar from '../component/SearchBar';
 import Homepage from './Homepage';
-import Product from './Product';
+import Product from './Product/index';
 import Footer from '../component/Footer';
 
 class App extends Component {

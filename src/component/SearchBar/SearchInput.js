@@ -11,9 +11,9 @@ const styles = theme => ({
   search: {
     position: 'relative',
     borderRadius: theme.shape.borderRadius,
-    backgroundColor: fade(theme.palette.common.white, 0.15),
-    '&:hover': {
-      backgroundColor: fade(theme.palette.common.white, 0.25),
+    backgroundColor: fade(theme.palette.common.white, 0.95),
+    '&:hover, &:focus, &:active': {
+      backgroundColor: fade(theme.palette.common.white, 1),
     },
     marginRight: theme.spacing.unit * 2,
     marginLeft: 0,
@@ -26,6 +26,7 @@ const styles = theme => ({
   searchIcon: {
     width: theme.spacing.unit * 9,
     height: '100%',
+    color: '#ccc',
     position: 'absolute',
     pointerEvents: 'none',
     display: 'flex',
@@ -33,7 +34,8 @@ const styles = theme => ({
     justifyContent: 'center',
   },
   inputRoot: {
-    color: 'inherit',
+    color: '#000',
+    fontWeight: 300,
     width: '100%',
   },
   inputInput: {

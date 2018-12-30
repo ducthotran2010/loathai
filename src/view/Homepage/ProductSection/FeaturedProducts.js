@@ -23,7 +23,7 @@ class FeaturedProducts extends Component {
 
 function mapStateToProps(state) {
   return {
-    featuredProducts: state.featuredProducts,
+    featuredProducts: state.homepage.featuredProducts,
   };
 }
   
