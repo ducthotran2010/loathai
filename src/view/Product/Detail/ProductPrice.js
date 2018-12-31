@@ -19,7 +19,7 @@ class ProductPrice extends Component {
             renderText={value => <span style={{ color: '#ff3425' }}>{value}</span>}
           />
         </Typography>
-        <Typography style={{ color: '#777' }}>
+        {product.truePrice && <Typography style={{ color: '#777' }}>
             Giá gốc: 
           <NumberFormat
             value={product.truePrice}
@@ -42,6 +42,7 @@ class ProductPrice extends Component {
             renderText={value => <span style={{ color: '#ff3425' }}>{value}</span>}
           />
         </Typography>
+        }
       </div>
     );
   }
