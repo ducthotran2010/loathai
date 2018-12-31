@@ -35,6 +35,7 @@ const cart = (state = [], action) => {
           
         ],
         price: 3790000,
+        truePrice: 4000000,
         trademark: {
           name: 'JBL',
           link: '',
