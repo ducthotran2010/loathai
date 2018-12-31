@@ -1,8 +1,9 @@
+/* eslint-disable no-unused-vars */
 
 const cart = (state = [], action) => {
   switch (action.type) {
     default:
-      return state;
+      return [0];
   }
 };
 export default cart;

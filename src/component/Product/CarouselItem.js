@@ -8,6 +8,7 @@ const DIV = styled.div`
     background-size: contain;
     background-repeat-x: no-repeat;
     background-repeat-y: no-repeat;
+    background-repeat: no-repeat;
     background-attachment: initial;
     background-origin: initial;
     background-clip: initial;

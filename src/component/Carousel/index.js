@@ -2,10 +2,10 @@ import React, { Component } from 'react';
 import AppBar from '@material-ui/core/AppBar';
 import SwipeableViews from 'react-swipeable-views';
 import { autoPlay } from 'react-swipeable-views-utils';
-import Fab from '@material-ui/core/Fab';
 import KeyboardArrowLeft from '@material-ui/icons/KeyboardArrowLeft';
 import KeyboardArrowRight from '@material-ui/icons/KeyboardArrowRight';
 import { mod } from 'react-swipeable-views-core';
+import IconButton from './IconButton';
 import StyledTabs from './StyledTabs';
 import DirectionArea, { LeftArea, RightArea } from './DirectionArea';
 
@@ -48,14 +48,14 @@ class Carousel extends Component {
         <div>
           <DirectionArea {...this.props.itemConfig}>
             <LeftArea>
-              <Fab size="small" aria-label="Left" onClick={this.handleChangeLeft}>
+              <IconButton onClick={this.handleChangeLeft}>
                 <KeyboardArrowLeft />
-              </Fab>
+              </IconButton>
             </LeftArea>
             <RightArea>
-              <Fab size="small" aria-label="Right" onClick={this.handleChangeRight}>
+              <IconButton onClick={this.handleChangeRight}>
                 <KeyboardArrowRight />
-              </Fab>
+              </IconButton>
             </RightArea>
             <AutoPlay 
               index={value} 

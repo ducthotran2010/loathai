@@ -14,6 +14,7 @@ class ProductCarousel extends Component {
         items={this.props.product.featuredPictures}
         label={CarouselLabel}
         tab={CarouselTab}
+        appBarStyle={{ boxShadow: 'none' }}
         amount={this.props.product.featuredPictures.length}
         getItemKey={i => `carousel-item-${i.name}`}
         getLabelKey={i => `carousel-label-${i.name}`}

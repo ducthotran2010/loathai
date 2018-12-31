@@ -6,7 +6,7 @@ import styled from 'styled-components';
 const Container = styled.div`
     background-color: #eee;
     margin-top: 30px;
-    margin-bottom: 10px;
+    padding-bottom: 10px;
 `;
 class Footer extends Component {
   render() {

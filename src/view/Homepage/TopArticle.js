@@ -10,19 +10,18 @@ class TopArticle extends Component {
     return (
       <Card style={{ height: 350 }}>
         <CardHeader
-          title="Shrimp and Chorizo Paella"
-          subheader="September 14, 2016"
+          title="Top 5 loa JBT bán chạy nhất tháng 12/2018 tại LOATHAI"
+          subheader="T2 31.14.2018"
         />
         <CardMedia
-          style={{ height: 160 }}
-          image="https://cdn.tgdd.vn/qcao/28_11_2018_16_31_14_BigSS-T12-398-110.png"
+          style={{ height: 120 }}
+          image="https://cdn.tgdd.vn/Products/Images/2162/107073/dan-am-thanh-soundbar-sony-ht-rt3-m-300x300.png"
           title="Contemplative Reptile"
         />
         <CardContent>
           <Typography component="p">
-            Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging
-            across all continents except Antarctica acrossate reptiles, with over 6,000 species, ranging
-            across all continents except Antarctica across...
+          Đứng đầu trong danh sách là tivi TCL L32D3000 sở hữu kiểu dáng đơn giản nhưng mang lại vẻ hiện đại, trẻ trung. 
+          Chiếc tivi này cũng gây ấn tượng với màn hình 32 inch gọn nhẹ thích hợp đặt vào nhiều không gian nội thất nhỏ.
           </Typography>
         </CardContent>
       </Card>

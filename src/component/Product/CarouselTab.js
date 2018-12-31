@@ -4,10 +4,12 @@ import { withStyles } from '@material-ui/core/styles';
 export default withStyles(() => ({
   root: {
     textTransform: 'initial',
-    width: 70,
-    minWidth: 70,
+    width: 74,
+    minWidth: 74,
     padding: 0,
     margin: 5,
+    borderRadius: 5,
+    border: '2px solid #ddd',
     marginBottom: 0,
     '&:hover': {
       opacity: 1,
@@ -20,6 +22,6 @@ export default withStyles(() => ({
     padding: 0,
   },
   selected: {
-    border: '1px solid #4a90e2',
+    border: '2px solid #4a90e2',
   },
 }))(Tab);

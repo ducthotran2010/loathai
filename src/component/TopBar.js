@@ -1,18 +1,25 @@
 import React, { Component } from 'react';
-import styled from 'styled-components';
+import { Grid } from '@material-ui/core';
+import { withStyles } from '@material-ui/core/styles';
 
-const BarContainer = styled.div`
-    height: 65px;
-    width: 100%;
-    background-color: #03255d;
-    text-align: center;
-    background: url(https://cdn.tgdd.vn/dmx2016/Content/images/campaign/noel/bnnodel2018new.png)
-`;
+const BarContainer = withStyles(theme => ({
+  container: {
+    height: '65px',
+    width: '100%',
+    backgroundColor: '#03255d',
+    textAlign: 'center',
+    background: 'url(https://cdn.tgdd.vn/dmx2016/Content/images/campaign/noel/bnnodel2018new.png)',
+    display: 'none',
+    [theme.breakpoints.up('md')]: {
+      display: 'block',
+    },
+  },
+}))(Grid);
 
 class TopBar extends Component {
   render() {
     return (
-      <BarContainer />
+      <BarContainer container />
     );
   }
 }

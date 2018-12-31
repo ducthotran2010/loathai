@@ -24,10 +24,18 @@ export default (props) => (
 );
 
 export const ProductGrid = withStyles(theme => ({
-  container: {
-    border: '1px solid #ccc',
-    padding: theme.spacing.unit,
+  item: {
+    backgroundColor: '#fff',
+    border: '2px solid #f0f0f0',
+    padding: theme.spacing.unit * 1.5,
     marginTop: -1,
     marginLeft: -1,
+    transition: theme.transitions.create('box-shadow'),
+    '&:hover': {
+      boxShadow: '0 0 10px 0.1rem rgba(0,0,0,0.2)',
+      zIndex: 2,
+    },
+    color: 'inherit',
+    textDecoration: 'none',
   },
 }))(Grid);

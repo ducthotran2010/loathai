@@ -1,11 +1,11 @@
 /* eslint-disable import/no-unresolved */
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import Modal from '@material-ui/core/Modal';
 import CloseIcon from '@material-ui/icons/Close';
 import { CarouselItem, CarouselTab, CarouselLabel } from 'component/Product';
+import Modal, { ModalContainer, ModalExit } from 'component/Product/Modal';
 import Carousel from 'component/Carousel';
-import Fab from '@material-ui/core/Fab';
+import IconButton from '@material-ui/core/IconButton';
 
 class ProductModal extends Component {
   constructor(props) {
@@ -29,17 +29,13 @@ class ProductModal extends Component {
   render() {
     const { state, closeModal, product } = this.props;
     return (
-      <Modal
-        open={state.isModalOpened}
-        onClose={closeModal}
-        style={{ backgroundColor: 'rgba(1, 1, 1, 0.9)' }}
-      >
-        <div style={getModalStyle()}>
-          <div style={{ position: 'absolute', right: 0, zIndex: 10 }}>
-            <Fab size="small" aria-label="Close" onClick={closeModal}>
+      <Modal open={state.isModalOpened} onClose={closeModal}>
+        <ModalContainer>
+          <ModalExit>
+            <IconButton onClick={closeModal} style={{ border: '1px solid rgba(0, 0, 0, 0.1)' }}>
               <CloseIcon />
-            </Fab>
-          </div>
+            </IconButton>
+          </ModalExit>
           <Carousel
             item={CarouselItem}
             startOn={state.modalIndex}
@@ -48,32 +44,15 @@ class ProductModal extends Component {
             itemConfig={{ height: this.state.height - 80, cursor: 'unset' }}
             label={CarouselLabel}
             tab={CarouselTab}
-            appBarStyle={{ backgroundColor: 'black' }}
             amount={product.featuredPictures.length}
             getItemKey={i => `modal-carousel-item-${i.name}`}
             getLabelKey={i => `modal-carousel-label-${i.name}`}
             time={2000}
-            animateTransitions={false}
           />
-        </div>
+        </ModalContainer>
       </Modal>
     );
   }
-}
-
-function getModalStyle() {
-  const top = 50;
-  const left = 50;
-    
-  return {
-    top: `${top}%`,
-    left: `${left}%`,
-    outline: 0,
-    transform: `translate(-${top}%, -${left}%)`,
-    position: 'absolute',
-    width: '100%',
-    height: '100%',
-  };
 }
 
 function mapStateToProps(state) {

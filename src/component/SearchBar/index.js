@@ -44,7 +44,7 @@ class SearchBar extends Component {
           <Grid container justify="center">
             <Toolbar className={classes.toolbar}>
 
-              <IconButton className={classes.menuButton} color="inherit" aria-label="Open drawer">
+              <IconButton className={classes.menuButton} color="inherit" component={Link} to="/">
                 <MenuIcon />
               </IconButton>
 

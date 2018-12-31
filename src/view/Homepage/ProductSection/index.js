@@ -7,11 +7,13 @@ import FeaturedProducts from './FeaturedProducts';
 class ProductSection extends Component {
   render() {
     return (
-      <ProductContainer>
-        <img alt="" width="300" className="imgbutton" src="https://cdn.tgdd.vn/dmx2016/Content/images/home2019/titleGiasocquangon-noel.png" />
-        <CategoryGroup />
+      <div>
+        <ProductContainer>
+          <img alt="" width="300" className="imgbutton" src="https://cdn.tgdd.vn/dmx2016/Content/images/home2019/titleGiasocquangon-noel.png" />
+          <CategoryGroup />
+        </ProductContainer>
         <FeaturedProducts />
-      </ProductContainer>
+      </div>
     );
   }
 }

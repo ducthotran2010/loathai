@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { Grid } from '@material-ui/core';
 import NormalButton from 'component/NormalButton';
+import FeaturedButton from 'component/FeaturedButton';
 
 function mapStateToProps(state) {
   return {
@@ -20,7 +21,10 @@ class CategoryButton extends Component {
         alignItems="center"
         style={{ flex: '1' }}
       >
-        {category.map(i => (
+        <FeaturedButton>
+          {category[0]}
+        </FeaturedButton>
+        {category.filter((i, index) => index !== 0).map(i => (
           <NormalButton key={i}>
             {i}
           </NormalButton>  

@@ -1,8 +1,12 @@
 /* eslint-disable import/no-unresolved */
 import React, { Component } from 'react';
 import { Grid } from '@material-ui/core';
+import { CarouselContainer } from 'component/Product';
 import ProductCarousel from './Carousel';
 import ProductModal from './Modal';
+import ProductDetail from './Detail/index';
+import ProductInformation from './Information';
+import ProductContent from './Content';
 
 class Product extends Component {
     state = {
@@ -28,15 +32,16 @@ class Product extends Component {
       return (
         <Grid container direction="column">
           <ProductModal state={this.state} closeModal={this.closeModal} />
-          <Grid container>
-            <Grid item md={5} xs={12} style={{ borderRight: '1px solid white' }}>
+          <Grid container style={{ backgroundColor: 'white' }}>
+            <CarouselContainer item md={6} xs={12}>
               <ProductCarousel isModalOpened={this.state.isModalOpened} openModal={this.openModal} />
-            </Grid>
-            <Grid item md={7}>
-            Detail...
+            </CarouselContainer>
+            <Grid item md={6} xs={12}>
+              <ProductDetail />
             </Grid>
           </Grid>
-          <div>some ecece</div>
+          <ProductInformation />
+          <ProductContent />
         </Grid>
       );
     }

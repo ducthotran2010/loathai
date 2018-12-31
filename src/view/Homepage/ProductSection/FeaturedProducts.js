@@ -10,7 +10,6 @@ class FeaturedProducts extends Component {
       <Grid
         container
         direction="row" 
-        alignItems="center"
         style={{ marginTop: '20px' }}
       >
         {featuredProducts.map((i) => (
