@@ -32,6 +32,7 @@ const styles = theme => ({
   },
   app: {
     backgroundColor: '#4a90e2',
+    boxShadow: 'none',
   },
 });
 

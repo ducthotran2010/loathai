@@ -22,7 +22,7 @@ class Detail extends Component {
     return (
       <div>
         <ProductHeader />
-        <Divider style={{ height: '3px', backgroundColor: '#f0f0f0' }} />
+        <Divider style={{ height: '3px', backgroundColor: '#fafafa' }} />
         <Grid container>
           <DIV>
             <div>

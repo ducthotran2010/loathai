@@ -49,7 +49,7 @@ class QuantityField extends Component {
             onTouchEnd={this.endPressAndHold}
             className={`${classes.inputButton} ${classes.leftButton}`} 
           >
-            <RemoveIcon />
+            <RemoveIcon fontSize="small" />
           </IconButton>
 
           <IconButton 
@@ -64,7 +64,7 @@ class QuantityField extends Component {
             onTouchEnd={this.endPressAndHold}
             className={`${classes.inputButton} ${classes.rightButton}`}
           >
-            <AddIcon />
+            <AddIcon fontSize="small" />
           </IconButton>
 
           <InputBase
@@ -121,6 +121,7 @@ const styles = theme => ({
     paddingLeft: 58,
     width: 48,
     height: 35,
+    fontSize: 14,
   },
   focused: {
     transition: theme.transitions.create('box-shadow'),

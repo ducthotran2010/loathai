@@ -5,6 +5,7 @@ import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
 import { withStyles } from '@material-ui/core/styles';
 import Typography from '@material-ui/core/Typography';
 import Badge from '@material-ui/core/Badge';
+import { Link } from 'react-router-dom';
 
 function mapStateToProps(state) {
   return {
@@ -32,7 +33,7 @@ class CartField extends Component {
     const { classes, cart } = this.props;
 
     return (
-      <Button variant="outlined" color="inherit" className={classes.cartButton}>
+      <Button variant="outlined" color="inherit" className={classes.cartButton} component={Link} to="cart">
         <Typography className={classes.cartTitle} color="inherit" noWrap>
             Giỏ hàng
         </Typography>

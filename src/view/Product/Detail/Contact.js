@@ -11,7 +11,7 @@ import SecurityIcon from '@material-ui/icons/Security';
 const DIV = styled.div`
     margin: 10px 0px 0px;
     border-radius: 4px;
-    border: 2px solid #f0f0f0;
+    border: 2px solid #fafafa;
 `;
 
 const Container = styled.div`

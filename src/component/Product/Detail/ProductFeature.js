@@ -11,7 +11,7 @@ export const Container = styled.div`
 
 export const StyledDivider = styled(Divider)`
     height: 3px !important; 
-    background-color: #f0f0f0 !important; 
+    background-color: #fafafa !important; 
     margin-top: 10px !important;
     margin-bottom: 20px !important;
 `;

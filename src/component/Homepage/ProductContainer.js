@@ -26,7 +26,7 @@ export default (props) => (
 export const ProductGrid = withStyles(theme => ({
   item: {
     backgroundColor: '#fff',
-    border: '2px solid #f0f0f0',
+    border: '2px solid #fafafa',
     padding: theme.spacing.unit * 1.5,
     marginTop: -1,
     marginLeft: -1,

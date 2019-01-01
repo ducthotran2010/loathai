@@ -8,7 +8,7 @@ export const CarouselContainer = withStyles(theme => ({
       padding: '0px 16px',
       borderRightWidth: '3px',
       borderRightStyle: 'solid',
-      borderRightColor: '#f0f0f0',
+      borderRightColor: '#fafafa',
     },
   },
 }))(Grid);
