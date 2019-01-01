@@ -5,6 +5,7 @@ import { TotalContainer } from 'component/Cart/index';
 import Typography from '@material-ui/core/Typography';
 import NumberFormat from 'react-number-format';
 import styled from 'styled-components';
+import { Link } from 'react-router-dom';
 import OrderButton from 'component/Cart/OrderButton';
 
 const DIV = styled.div`
@@ -40,7 +41,7 @@ class TotalSection extends Component {
           </Typography>
         </DIV>
         <ContainButton>
-          <OrderButton />
+          <OrderButton component={Link} to="booking" />
         </ContainButton>
       </TotalContainer>
     );

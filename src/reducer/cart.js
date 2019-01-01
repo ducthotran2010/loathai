@@ -32,7 +32,6 @@ const cart = (state = [], action) => {
         name: 'Loa 2.1 TAKO W-888',
         price: 589000,
         picture: 'https://salt.tikicdn.com/cache/175x175/media/catalog/product/l/o/loa-genius-sp-u115-den_1_1.jpg',
-        truePrice: 700000,
         quantity: 2,
       },
       {

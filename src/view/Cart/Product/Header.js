@@ -4,7 +4,7 @@ import Typography from '@material-ui/core/Typography';
 
 export default (props) => (
   <Grid item xs={12} sm={5}>
-    <Typography variant="subtitle1" style={{ marginBottom: 16, fontSize: 18 }}>
+    <Typography variant="subtitle2" style={{ marginBottom: 16, fontSize: 18 }}>
       {props.name}
     </Typography>
     <Typography component="font" color="blue">

@@ -15,7 +15,7 @@ class Product extends Component {
         </ImgDiv>
         <ContentDiv container spacing={16}>
           <ProductHeader name={product.name} />
-          <ProductPrice price={product.price} />
+          <ProductPrice price={product.price} truePrice={product.truePrice} />
           <ProductQuantity quantity={product.quantity} />
         </ContentDiv>
       </Container>

@@ -14,11 +14,16 @@ class Product extends Component {
       modalIndex: -1,
     };
 
+    componentDidMount() {
+      document.title = `Sản phẩm | ${document.location.hostname}`;
+    }
+
     openModal = (index) => {
       this.setState({ 
         isModalOpened: true,
         modalIndex: index, 
       });
+      document.getElementById('theme-color').content = '#fff';
     }
   
     closeModal = () => {
@@ -26,6 +31,7 @@ class Product extends Component {
         isModalOpened: false,
         modalIndex: -1,
       });
+      document.getElementById('theme-color').content = '#4a90e2';
     }
 
     render() {

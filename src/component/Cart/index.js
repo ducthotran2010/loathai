@@ -20,7 +20,7 @@ export const TotalContainer = withStyles(() => ({
     minWidth: '254px',
     maxWidth: '1000px',
     position: 'sticky',
-    top: '70px',
+    top: '76px',
   },
 }))(Grid);
   

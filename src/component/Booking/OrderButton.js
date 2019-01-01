@@ -15,16 +15,16 @@ export default withStyles(theme => ({
     marginRight: 0,
     height: 48,
     width: '100%',
-    maxWidth: '312px',
+    maxWidth: '240px',
     color: theme.palette.getContrastText('#f11421'),
-    backgroundColor: '#ff3945',
+    backgroundColor: '#4a90e2',
     '&:hover': {
-      backgroundColor: '#f11421',
+      backgroundColor: '#3a7ece',
     },
   },
 }))((props) => (
   <Button ariant="outlined" {...props}>
     <LeftAddShoppingCartIcon />
-        Tiến hành đặt hàng
+        Đặt mua
   </Button>
 ));

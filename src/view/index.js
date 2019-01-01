@@ -5,7 +5,8 @@ import TopBar from '../component/TopBar';
 import SearchBar from '../component/SearchBar';
 import Homepage from './Homepage';
 import Product from './Product';
-import Cart from './Cart/index';
+import Cart from './Cart';
+import Booking from './Booking/index';
 import NotFound from './NotFound';
 import Footer from '../component/Footer';
 
@@ -21,6 +22,7 @@ class App extends Component {
               <Route exact path="/" component={Homepage} />
               <Route path="/product" component={Product} />
               <Route path="/cart" component={Cart} />
+              <Route path="/booking" component={Booking} />
               <Route component={NotFound} />
             </Switch>
           </Grid>

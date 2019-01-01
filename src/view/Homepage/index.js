@@ -7,6 +7,9 @@ import ProductSection from './ProductSection';
 import HomepageCarousel from './Carousel';
 
 class Homepage extends Component {
+  componentDidMount() {
+    document.title = `Trang chủ LOATHAI | ${document.location.hostname}`;
+  }
   render() {
     return (
       <Grid container>

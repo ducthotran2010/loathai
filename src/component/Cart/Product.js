@@ -5,7 +5,7 @@ import styled from 'styled-components';
 export const Container = styled.div`
     display: flex;
     padding: 28px 20px;
-    border-bottom: 3px solid #fafafa;
+    border-bottom: 2px solid #f0f0f0;
     overflow: hidden;
 `;
 // export const Container = withStyles((theme) => ({
